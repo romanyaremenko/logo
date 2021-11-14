@@ -80,7 +80,8 @@ p {
   0px 0px 15.725px rgba(255, 38, 169, 0.25),
   11.7937px 15.725px 3.93125px #000000,
   11.7937px 15.725px 11.7937px #000000;
-  color: #FF5EBF;
+  //color: #FF5EBF;
+  color: #EA43B9;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -136,6 +137,8 @@ span {
   11.7937px 15.725px 3.93125px #000000,
   11.7937px 15.725px 11.7937px #000000;
   color: #FF5EBF;
+  color: #EA43B9;
+
   @media (min-width: 1440px) {
     font-size: 165px;
   }
