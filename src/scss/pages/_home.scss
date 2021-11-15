@@ -19,7 +19,13 @@
 .logo__svg {
   display: flex;
   justify-content: center;
+  picture {
+    display: flex;
+    justify-content: center;
+  } 
 }
+
+
 .logo__svg img {
   max-width: 1380px;
   width: 85%;
