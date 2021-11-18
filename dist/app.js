@@ -11,15 +11,11 @@
     HomePage();
   });
   var logoNeon = document.querySelector(".logo__neon");
-  function neonToggle() {
-    if (logoNeon.classList.contains("neon")) {
-      logoNeon.classList.remove("neon");
-    } else {
-      logoNeon.classList.add("neon");
-    }
-  }
   setInterval(function() {
-    neonToggle();
+    logoNeon.classList.add("neon");
+  }, 1500);
+  setInterval(function() {
+    logoNeon.classList.remove("neon");
   }, 3e3);
 })();
 //# sourceMappingURL=app.js.map
