@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/js/home.js", "../src/app.js"],
+  "sourcesContent": ["export const HomePage = () => {\n  if (document.querySelector('.home-page')) {\n    console.log('home page')\n  }\n}\n", "import { HomePage } from './js/home'\n\n// wait for document loaded\nwindow.addEventListener('load', function (event) {\n  HomePage()\n})\n\n\nlet logoNeon = document.querySelector(\".logo__neon\");\n\nfunction neonToggle() {\n  if(logoNeon.classList.contains('neon')) {\n    logoNeon.classList.remove(\"neon\")\n  } else {\n    logoNeon.classList.add(\"neon\")\n  }\n}\n\nsetInterval(function() {\n  neonToggle()\n}, 3000);\n\n"],
+  "mappings": ";;AAAO,MAAM,WAAW,MAAM;AAC5B,QAAI,SAAS,cAAc,eAAe;AACxC,cAAQ,IAAI;AAAA;AAAA;;;ACChB,SAAO,iBAAiB,QAAQ,SAAU,OAAO;AAC/C;AAAA;AAIF,MAAI,WAAW,SAAS,cAAc;AAEtC,wBAAsB;AACpB,QAAG,SAAS,UAAU,SAAS,SAAS;AACtC,eAAS,UAAU,OAAO;AAAA,WACrB;AACL,eAAS,UAAU,IAAI;AAAA;AAAA;AAI3B,cAAY,WAAW;AACrB;AAAA,KACC;",
+  "names": []
+}
