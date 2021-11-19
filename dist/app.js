@@ -11,11 +11,16 @@
     HomePage();
   });
   var logoNeon = document.querySelector(".logo__neon");
-  setInterval(function() {
-    logoNeon.classList.add("neon");
-  }, 1500);
-  setInterval(function() {
-    logoNeon.classList.remove("neon");
-  }, 3e3);
+  var delay = 1500;
+  var timerId = setTimeout(function request() {
+    if (logoNeon.classList.contains("neon")) {
+      delay = 3e3;
+      logoNeon.classList.remove("neon");
+    } else {
+      delay = 1500;
+      logoNeon.classList.add("neon");
+    }
+    timerId = setTimeout(request, delay);
+  }, delay);
 })();
 //# sourceMappingURL=app.js.map
