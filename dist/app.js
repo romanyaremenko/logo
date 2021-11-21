@@ -28,7 +28,7 @@
       logoNeon.classList.add("neon");
       document.querySelector(".neon").animate([
         { opacity: "0" },
-        { opacity: "0.6" }
+        { opacity: "0.9" }
       ], {
         duration: 0.01,
         iterations: Infinity
