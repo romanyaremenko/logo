@@ -10,5 +10,31 @@
   window.addEventListener("load", function(event) {
     HomePage();
   });
+  var logoNeon = document.querySelector(".logo__neon");
+  var delay = 1500;
+  var timerId = setTimeout(function request() {
+    if (logoNeon.classList.contains("neon")) {
+      delay = 5e3;
+      logoNeon.classList.remove("neon");
+      document.querySelector(".logo__neon").animate([
+        { opacity: "1" },
+        { opacity: "1" }
+      ], {
+        duration: 0.01,
+        iterations: Infinity
+      });
+    } else {
+      delay = 1500;
+      logoNeon.classList.add("neon");
+      document.querySelector(".neon").animate([
+        { opacity: "0" },
+        { opacity: "0.6" }
+      ], {
+        duration: 0.01,
+        iterations: Infinity
+      });
+    }
+    timerId = setTimeout(request, delay);
+  }, delay);
 })();
 //# sourceMappingURL=app.js.map
