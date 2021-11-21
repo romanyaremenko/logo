@@ -27,7 +27,7 @@
       delay = 1500;
       logoNeon.classList.add("neon");
       document.querySelector(".neon").animate([
-        { opacity: "0" },
+        { opacity: "1" },
         { opacity: "0.9" }
       ], {
         duration: 0.01,
