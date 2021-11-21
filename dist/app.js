@@ -17,7 +17,7 @@
       delay = 5e3;
       logoNeon.classList.remove("neon");
     } else {
-      delay = 500;
+      delay = 1500;
       logoNeon.classList.add("neon");
     }
     timerId = setTimeout(request, delay);
