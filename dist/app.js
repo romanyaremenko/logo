@@ -14,10 +14,10 @@
   var delay = 1500;
   var timerId = setTimeout(function request() {
     if (logoNeon.classList.contains("neon")) {
-      delay = 3e3;
+      delay = 5e3;
       logoNeon.classList.remove("neon");
     } else {
-      delay = 1500;
+      delay = 500;
       logoNeon.classList.add("neon");
     }
     timerId = setTimeout(request, delay);
