@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../src/js/home.js", "../src/app.js"],
-  "sourcesContent": ["export const HomePage = () => {\n  if (document.querySelector('.home-page')) {\n    console.log('home page')\n  }\n}\n", "import { HomePage } from './js/home'\n\n// wait for document loaded\nwindow.addEventListener('load', function (event) {\n  HomePage()\n})\n\n\n// let logoNeon = document.querySelector(\".logo__neon\");\n//\n// let delay = 1500;\n//\n// let timerId = setTimeout(function request() {\n//\n//   if (logoNeon.classList.contains(\"neon\")) {\n//     delay = 3000;\n//     logoNeon.classList.remove(\"neon\")\n//   } else {\n//     delay = 1500;\n//     logoNeon.classList.add(\"neon\")\n//   }\n//\n//   timerId = setTimeout(request, delay);\n//\n// }, delay);"],
-  "mappings": ";;AAAO,MAAM,WAAW,MAAM;AAC5B,QAAI,SAAS,cAAc,eAAe;AACxC,cAAQ,IAAI;AAAA;AAAA;;;ACChB,SAAO,iBAAiB,QAAQ,SAAU,OAAO;AAC/C;AAAA;",
+  "sourcesContent": ["export const HomePage = () => {\n  if (document.querySelector('.home-page')) {\n    console.log('home page')\n  }\n}\n", "import { HomePage } from './js/home'\n\n// wait for document loaded\nwindow.addEventListener('load', function (event) {\n  HomePage()\n})\n\n\nlet logoNeon = document.querySelector(\".logo__neon\");\n\nlet delay = 1500;\n\nlet timerId = setTimeout(function request() {\n\n  if (logoNeon.classList.contains(\"neon\")) {\n    delay = 3000;\n    logoNeon.classList.remove(\"neon\")\n  } else {\n    delay = 1500;\n    logoNeon.classList.add(\"neon\")\n  }\n\n  timerId = setTimeout(request, delay);\n\n}, delay);"],
+  "mappings": ";;AAAO,MAAM,WAAW,MAAM;AAC5B,QAAI,SAAS,cAAc,eAAe;AACxC,cAAQ,IAAI;AAAA;AAAA;;;ACChB,SAAO,iBAAiB,QAAQ,SAAU,OAAO;AAC/C;AAAA;AAIF,MAAI,WAAW,SAAS,cAAc;AAEtC,MAAI,QAAQ;AAEZ,MAAI,UAAU,WAAW,mBAAmB;AAE1C,QAAI,SAAS,UAAU,SAAS,SAAS;AACvC,cAAQ;AACR,eAAS,UAAU,OAAO;AAAA,WACrB;AACL,cAAQ;AACR,eAAS,UAAU,IAAI;AAAA;AAGzB,cAAU,WAAW,SAAS;AAAA,KAE7B;",
   "names": []
 }
