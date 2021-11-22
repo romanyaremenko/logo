@@ -14,7 +14,7 @@
   var delay = 1500;
   var timerId = setTimeout(function request() {
     if (logoNeon.classList.contains("neon")) {
-      delay = 5e3;
+      delay = 4500;
       logoNeon.classList.remove("neon");
       document.querySelector(".logo__neon").animate([
         { opacity: "1" },
@@ -24,7 +24,7 @@
         iterations: Infinity
       });
     } else {
-      delay = 1500;
+      delay = 1e3;
       logoNeon.classList.add("neon");
       document.querySelector(".neon").animate([
         { opacity: "1" },
